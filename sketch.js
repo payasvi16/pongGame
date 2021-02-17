@@ -5,8 +5,13 @@ function setup()
 {
   createCanvas(400,400);
   playerPaddle= createSprite(390,200,10,100)
+  playerPaddle.shapeColour="yellow";
+
   computerPaddle= createSprite(10,200,10,100)
+  computerPaddle.shapeColour="orange";
+  
   ball= createSprite(200,200,10,10)
+  ball.shapeColour="red";
   gameState="serve";
   edges= createEdgeSprites()
   playerscore=0;
@@ -16,7 +21,7 @@ function setup()
 
 function draw()
 {
-  background(255);
+  background("black");
  text(playerscore,225,15)
  text(computerscore,170,15)
 
