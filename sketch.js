@@ -5,13 +5,11 @@ function setup()
 {
   createCanvas(400,400);
   playerPaddle= createSprite(390,200,10,100)
-  playerPaddle.shapeColor="yellow";
-
+  playerPaddle.shapeColor="red"
   computerPaddle= createSprite(10,200,10,100)
-  computerPaddle.shapeColor="orange";
-  
+  computerPaddle.shapeColor="orange"
   ball= createSprite(200,200,10,10)
-  ball.shapeColor="red";
+  ball.shapeColor="yellow"
   gameState="serve";
   edges= createEdgeSprites()
   playerscore=0;
@@ -21,7 +19,9 @@ function setup()
 
 function draw()
 {
-  background("grey");
+  background("black");
+
+ stroke("white")
  text(playerscore,225,15)
  text(computerscore,170,15)
 
@@ -65,6 +65,7 @@ if(ball.x>400 || ball.x< 0)
 if(playerscore ===5 || computerscore===5)
 {
   gameState="over";
+  fill("black")
   text("Game Over", 170,170)
   text("Press R to Restart", 155, 190)
 }
