@@ -21,7 +21,7 @@ function setup()
 
 function draw()
 {
-  background("black");
+  background("grey");
  text(playerscore,225,15)
  text(computerscore,170,15)
 
