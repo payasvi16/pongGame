@@ -5,13 +5,13 @@ function setup()
 {
   createCanvas(400,400);
   playerPaddle= createSprite(390,200,10,100)
-  playerPaddle.shapeColour="yellow";
+  playerPaddle.shapeColor="yellow";
 
   computerPaddle= createSprite(10,200,10,100)
-  computerPaddle.shapeColour="orange";
+  computerPaddle.shapeColor="orange";
   
   ball= createSprite(200,200,10,10)
-  ball.shapeColour="red";
+  ball.shapeColor="red";
   gameState="serve";
   edges= createEdgeSprites()
   playerscore=0;
